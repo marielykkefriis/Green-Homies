@@ -2,22 +2,22 @@ window.addEventListener("load", sidenVises);
 
 function sidenVises() {
     console.log("sidenVises");
-    document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+    document.querySelector("#menu").addEventListener("click", toggleMenu);
     document.querySelector("#mere").addEventListener("click", readMore);
 
 }
 
 function toggleMenu() {
     console.log("toggleMenu");
-    document.querySelector("#menubaggrund").classList.toggle("hidden");
+    document.querySelector("#menu").classList.toggle("hidden");
 
-    let erSkjult = document.querySelector("#menubaggrund").classList.contains("hidden");
+    let erSkjult = document.querySelector("#menu").classList.contains("hidden");
 
     if (erSkjult == true) {
-        document.querySelector("#menuknap").textContent = "☰";
+        document.querySelector("#menu").textContent = "☰";
         document.querySelector("section").classList = "";
     } else {
-        document.querySelector("#menuknap").textContent = "X";
+        document.querySelector("#menu").textContent = "X";
         document.querySelector("section").classList = "hidden";
     }
 }
