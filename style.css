@@ -1,0 +1,90 @@
+#splash {
+    background-image: url(img/splash.jpg);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    background-position: 120%;
+
+}
+
+#logo {
+    background-image: url(img/logo.png);
+    width: 20vw;
+    height: 8vw;
+    background-size: cover;
+    position: sticky;
+    margin-left: 2vw;
+
+}
+
+body {
+    background: #D7CCD0;
+}
+
+nav {
+    text-align: right;
+    margin-top: 40vw;
+    margin-right: 5vw;
+
+}
+
+@media(min-width: 600px) {
+    #splash {
+        background-image: url(img/splash.jpg);
+        width: 100vw;
+        height: 40vw;
+        background-size: cover;
+        /*background-position: 80% 0%;*/
+    }
+
+    #logo {
+        background-image: url(img/logo.png);
+        width: 15vw;
+        height: 6vw;
+        background-size: cover;
+        position: sticky;
+        margin-left: 2vw;
+
+    }
+
+    body {
+        background: #D7CCD0;
+    }
+
+    nav {
+        text-align: right;
+        margin-top: 25vw;
+        margin-right: 5vw;
+
+    }
+
+    button {
+        margin: 1vw;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2vw;
+        font-family: 'News Cycle', sans-serif;
+
+    }
+
+    h1 {
+        text-align: right;
+        margin-right: 40vw;
+        margin-top: 5vw;
+        font-family: 'Shadows Into Light Two', cursive;
+    }
+
+    header p {
+        text-align: left;
+        margin-left: 49vw;
+        font-family: 'News Cycle', sans-serif;
+
+    }
+
+    footer p {
+        margin-left: 2vw;
+        margin-top: 10vw;
+        font-family: 'News Cycle', sans-serif;
+    }
+}
