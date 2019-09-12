@@ -1,8 +1,12 @@
+body {
+    margin: 0;
+}
+
 #splash {
     background-image: url(img/splash.jpg);
     background-size: 100%;
     width: 100vw;
-    height: 56.25vw;
+    height: 70vw;
     background-position: 120%;
 
 }
@@ -12,7 +16,6 @@
     width: 20vw;
     height: 8vw;
     background-size: cover;
-    position: sticky;
     margin-left: 2vw;
 
 }
@@ -21,7 +24,7 @@ body {
     background: #D7CCD0;
 }
 
-nav {
+forsidenav {
     text-align: right;
     margin-top: 40vw;
     margin-right: 5vw;
@@ -51,7 +54,7 @@ nav {
         background: #D7CCD0;
     }
 
-    nav {
+    forsidenav {
         text-align: right;
         margin-top: 25vw;
         margin-right: 5vw;
