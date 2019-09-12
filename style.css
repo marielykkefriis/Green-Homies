@@ -1,5 +1,32 @@
+/*generelt*/
+
 body {
     margin: 0;
+    padding: 0;
+    background: #D7CCD0;
+}
+
+h1 {
+
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+p {
+    font-family: 'News Cycle', sans-serif;
+}
+
+footer p {
+    margin-left: 2vw;
+    margin-top: 10vw;
+    font-family: 'News Cycle', sans-serif;
+}
+
+/*forside.html*/
+
+#velkommen h1 {
+    text-align: right;
+    margin-right: 40vw;
+    margin-top: 5vw;
 }
 
 #splash {
@@ -20,11 +47,7 @@ body {
 
 }
 
-body {
-    background: #D7CCD0;
-}
-
-forsidenav {
+#forsidenav {
     text-align: right;
     margin-top: 40vw;
     margin-right: 5vw;
@@ -56,10 +79,6 @@ forsidenav {
 
     }
 
-    body {
-        background: #D7CCD0;
-    }
-
 
     #menu {
         text-align: right;
@@ -67,7 +86,7 @@ forsidenav {
         margin-right: 5vw;
     }
 
-    button {
+    #forsidenav button {
         margin: 1vw;
         background: none;
         border: none;
@@ -77,25 +96,16 @@ forsidenav {
 
     }
 
-    h1 {
-        text-align: right;
-        margin-right: 40vw;
-        margin-top: 5vw;
-        font-family: 'Shadows Into Light Two', cursive;
-    }
 
-    header p {
+
+    #velkommen p {
         text-align: left;
         margin-left: 49vw;
         font-family: 'News Cycle', sans-serif;
 
     }
 
-    footer p {
-        margin-left: 2vw;
-        margin-top: 10vw;
-        font-family: 'News Cycle', sans-serif;
-    }
+
 }
 
 /*Planter.html*/
