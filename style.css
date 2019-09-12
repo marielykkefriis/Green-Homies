@@ -6,6 +6,10 @@ body {
     background: #D7CCD0;
 }
 
+img {
+    width: 100%;
+}
+
 h1 {
 
     font-family: 'Shadows Into Light Two', cursive;
@@ -133,3 +137,18 @@ footer p {
 /*Planter.html*/
 
 #planterheader {}
+
+#liste {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    width: 70vw;
+    margin: 1vw auto;
+}
+
+#liste .plante {
+    text-align: center;
+    background-color: white;
+    border-radius: 5%;
+    cursor: pointer;
+}
