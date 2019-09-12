@@ -17,6 +17,12 @@ h1 {
     font-weight: 200;
 }
 
+h2 {
+    font-family: 'News Cycle', sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
 p {
     font-family: 'News Cycle', sans-serif;
     color: #4D4C4C;
@@ -136,19 +142,78 @@ footer p {
 
 /*Planter.html*/
 
-#planterheader {}
+#planterheader {
+    text-align: right;
+}
+
 
 #liste {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 1rem;
-    width: 70vw;
+    grid-gap: 1.5rem;
+    width: 80vw;
     margin: 1vw auto;
 }
 
 #liste .plante {
     text-align: center;
-    background-color: white;
-    border-radius: 5%;
     cursor: pointer;
+    border: none;
+}
+
+#liste .plante:hover {
+    transform: scale(1.02);
+}
+
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar button {
+    background-color: #d7ccd0;
+    border: none;
+    font-family: 'News Cycle', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5rem;
+    margin: 0px;
+    cursor: pointer;
+}
+
+#sidebar button:hover {
+    transform: scale(1.02);
+}
+
+.valgt {
+    background-color: blue;
+}
+
+@media (min-width: 600px) {
+    #liste {
+        width: 75vw;
+    }
+
+    #plantermain {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "sidebar liste liste liste liste"
+
+    }
+
+
+    #liste {
+        grid-area: liste;
+    }
+
+    #sidebar {
+        grid-area: sidebar;
+    }
+
+
+    #sidebar button {
+        margin: 10px;
+        text-align: left;
+    }
 }
