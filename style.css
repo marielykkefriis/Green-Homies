@@ -31,6 +31,12 @@ forsidenav {
 
 }
 
+#menu {
+    text-align: right;
+    margin-top: 40vw;
+    margin-right: 5vw;
+}
+
 @media(min-width: 600px) {
     #splash {
         background-image: url(img/splash.jpg);
@@ -54,11 +60,11 @@ forsidenav {
         background: #D7CCD0;
     }
 
-    forsidenav {
+
+    #menu {
         text-align: right;
         margin-top: 25vw;
         margin-right: 5vw;
-
     }
 
     button {
