@@ -1,34 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <section id="headerdetalje">
-            <div id="logo"></div>
-            <nav id="detaljenav">
-                <div id="menudetalje" class="hidden detalje">
-                    <button data-ret="alt" class="valgt">Forside</button>
-                    <button data-ret="forretter"><a href="planter.html">Planter</a></button>
-                    <button data-ret="hovedretter">Bag planterne</button>
-                </div>
-            </nav>
-            <div id="menuknap">☰</div>
-        </section>
-    </header>
-    <section id="beskrivelse">
-        <div class="tekst">
-            <h1>Beskrivelse</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates optio porro id eligendi debitis! Quasi dolore saepe et, numquam voluptates, sunt cumque nam nisi ea pariatur veniam illum. Officia, possimus.<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore beatae ipsum molestiae ducimus, autem nostrum labore dicta voluptate atque, nihil vitae quo maxime quidem perspiciatis totam expedita, saepe neque adipisci?</p>
-        </div>
-        <div class="billede">
-        </div>
-    </section>
+    <header id="planterheader">
+        <a href="index.html">
+            <div id="planterlogo"></div>
+        </a>
 
+        <nav id="planternav">
+            <button><a href="index.html">Forside</a></button>
+            <button><a href="planter.html">Planter</a></button>
+            <button><a href="om.html">Bag planterne</a></button>
+        </nav>
+    </header>
+
+    <section id="detalje">
+        <button class="luk">←</button>
+        <article id="plantearticle">
+            <div id="txt">
+                <h1></h1>
+                <h2></h2>
+                <p id="info"></p>
+                <h3></h3>
+                <p id="pasning"></p>
+            </div>
+            <div id="pic">
+                <img>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <p>© Green Homies</p>
+    </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get("id");
+        console.log(id);
+
+        let planter;
+        let url = `https://spreadsheets.google.com/feeds/list/1LdzNZvZu6UgvTfVuaW74ztqf7M_hN8RFGloykM7d-Es/od6/public/values?alt=json`;
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            hentData();
+            document.querySelector(".luk").addEventListener("click", () => {
+                history.back();
+            })
+        }
+
+        async function hentData() {
+            const response = await fetch(url);
+            planter = await response.json();
+            visData();
+        }
+
+        function visData() {
+            planter.feed.entry.forEach(plante => {
+                if (plante.gsx$id.$t == id) {
+
+                    document.querySelector("h1").textContent = plante.gsx$overskrift.$t;
+
+                    document.querySelector("h2").textContent = plante.gsx$navn.$t;
+
+                    document.querySelector("#info").textContent = plante.gsx$info.$t;
+
+                    document.querySelector("h3").textContent = "Hvordan passer man den?";
+
+                    document.querySelector("#pasning").textContent = plante.gsx$pasning.$t;
+
+                    document.querySelector("img").src = `imgs/big/${plante.gsx$billede.$t}.jpg`;
+
+                }
+            })
+        }
+    </script>
 </body>
+
 </html>
