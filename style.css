@@ -6,9 +6,7 @@ body {
     background: white;
 }
 
-img {
-    width: 100%;
-}
+img {}
 
 h1 {
 
@@ -54,7 +52,7 @@ footer p {
 }
 
 #splash {
-    background-image: url(img/splash.jpg);
+    background-image: url(img/IMG_1086%20copy.jpg);
     background-size: 100%;
     width: 100vw;
     height: 70vw;
@@ -112,7 +110,7 @@ footer p {
 
 @media(min-width: 600px) {
     #splash {
-        background-image: url(img/splash.jpg);
+        background-image: url(img/IMG_1086%20copy.jpg);
         width: 100vw;
         height: 40vw;
         background-size: cover;
