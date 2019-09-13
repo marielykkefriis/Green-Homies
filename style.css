@@ -55,12 +55,14 @@ footer p {
     height: 70vw;
     background-position: 120%;
 
+
 }
 
 #headerforside {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
 
 }
 
