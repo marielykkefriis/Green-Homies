@@ -6,7 +6,9 @@ body {
     background: white;
 }
 
-img {}
+img {
+    width: 100%;
+}
 
 h1 {
 
@@ -35,14 +37,11 @@ p {
 a {
     text-decoration: none;
     color: white;
-    padding: 0px 10px;
-    border-radius: 5%;
+    cursor: pointer;
 }
 
 a:hover {
-    transform: scale(1.05);
     color: white;
-    background-color: #d7ccd0;
 }
 
 footer {
@@ -72,11 +71,10 @@ footer p {
 
 #splash {
     background-image: url(img/IMG_1086%20copy.jpg);
-    background-size: 100%;
+    background-size: cover;
     width: 100vw;
     height: 70vw;
-    background-position: 120%;
-
+    background-position: 40%;
 
 }
 
@@ -116,8 +114,9 @@ footer p {
     background: none;
     border: none;
     color: white;
-    font-size: 4vw;
+    font-size: 5.4vw;
     font-family: 'News Cycle', sans-serif;
+
 
 }
 
@@ -158,7 +157,7 @@ footer p {
     #forsidenav button {
         display: inline-block;
         margin: 1vw;
-        margin-right: 5vw;
+        margin-left: 0;
         background: none;
         border: none;
         color: white;
@@ -188,8 +187,9 @@ footer p {
 
 #planterheader {
     text-align: right;
-    background-image: url(img/splash.jpg);
-    background-size: 100%;
+    background-image: url(img/IMG_1086%20copy.jpg);
+    background-size: cover;
+    background-position: 100%;
     margin: 0;
     height: auto;
     position: fixed;
@@ -254,13 +254,11 @@ footer p {
 }
 
 #planternav button {
-    display: flex;
     margin: 1vw;
-    margin-left: 24vw;
     background: none;
     border: none;
     color: white;
-    font-size: 4vw;
+    font-size: 1.5rem;
     font-family: 'News Cycle', sans-serif;
 
 }
@@ -275,37 +273,7 @@ footer p {
 
 }
 
-<<<<<<< HEAD
 @media (min-width: 900px) {
-=======
-@media (min-width: 600px) {
-    #menuknap {
-        display: none;
-        background-image: url(img/logo.png);
-    }
-
-    #planternav button {
-        display: inline-block;
-        margin: 1vw;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 1.5rem;
-        font-family: 'News Cycle', sans-serif;
-
-    }
-
-    #planterlogo {
-        margin: 1vw;
-        background-image: url(img/logo.png);
-        width: 20vw;
-        height: 8vw;
-        background-size: cover;
-        margin-left: 2vw;
-
-    }
-
->>>>>>> origin/master
     #liste {
         width: 75vw;
     }
