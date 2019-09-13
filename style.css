@@ -97,9 +97,8 @@ footer p {
     background: none;
     border: none;
     color: white;
-    font-size: 5.4vw;
+    font-size: 4vw;
     font-family: 'News Cycle', sans-serif;
-
 
 }
 
@@ -140,7 +139,7 @@ footer p {
     #forsidenav button {
         display: inline-block;
         margin: 1vw;
-        margin-left: 0;
+        margin-right: 5vw;
         background: none;
         border: none;
         color: white;
@@ -230,11 +229,13 @@ footer p {
 }
 
 #planternav button {
+    display: flex;
     margin: 1vw;
+    margin-left: 24vw;
     background: none;
     border: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 4vw;
     font-family: 'News Cycle', sans-serif;
 
 }
@@ -250,6 +251,32 @@ footer p {
 }
 
 @media (min-width: 600px) {
+    #menuknap {
+        display: none;
+        background-image: url(img/logo.png);
+    }
+
+    #planternav button {
+        display: inline-block;
+        margin: 1vw;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        font-family: 'News Cycle', sans-serif;
+
+    }
+
+    #planterlogo {
+        margin: 1vw;
+        background-image: url(img/logo.png);
+        width: 20vw;
+        height: 8vw;
+        background-size: cover;
+        margin-left: 2vw;
+
+    }
+
     #liste {
         width: 75vw;
     }
