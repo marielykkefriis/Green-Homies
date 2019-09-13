@@ -32,7 +32,7 @@ function visData() {
         if (plante.gsx$kategori.$t == filter || filter == "alle") {
             const klon = skabelon.cloneNode(true);
 
-            klon.querySelector("img").src = `imgs/${plante.gsx$billede.$t}.jpg`;
+            klon.querySelector("img").src = `imgs/small/${plante.gsx$billede.$t}.jpg`;
             klon.querySelector("img").alt = plante.gsx$navn.$t;
 
             klon.querySelector("h2").textContent = plante.gsx$navn.$t;
