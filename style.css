@@ -246,6 +246,11 @@ footer p {
         grid-template-areas: "sidebar liste liste liste liste"
     }
 
+    #planterlogo {
+        width: 10vw;
+        height: 4vw;
+    }
+
     #sidebar button {
         width: 230px;
     }
