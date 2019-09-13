@@ -105,10 +105,14 @@ footer p {
     }
 
     #menu {
+
+        visibility: visible;
+    }
+
+    .forside {
         text-align: right;
         margin-top: 25vw;
         margin-right: 5vw;
-        visibility: visible;
     }
 
     #menuknap {
@@ -218,4 +222,32 @@ footer p {
         margin: 10px;
         text-align: left;
     }
+}
+
+/*Detaljeside*/
+
+#headerdetalje {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media(min-width: 600) {
+    .detalje {
+        text-align: right;
+        margin-top: 5vw;
+        margin-right: 5vw;
+        visibility: visible;
+
+    }
+}
+
+#detaljenav button {
+    margin: 1vw;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2vw;
+    font-family: 'News Cycle', sans-serif;
+
 }
