@@ -15,6 +15,7 @@ h1 {
     font-family: 'Shadows Into Light Two', cursive;
     color: #4D4C4C;
     font-weight: 200;
+    font-size: 2rem;
 }
 
 h2 {
@@ -23,9 +24,27 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    font-family: 'News Cycle', sans-serif;
+    font-weight: bold;
+}
+
 p {
     font-family: 'News Cycle', sans-serif;
     color: #4D4C4C;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+    border-radius: 5%;
+}
+
+a:hover {
+    transform: scale(1.05);
+    color: white;
+    background-color: #d7ccd0;
 }
 
 footer {
@@ -205,6 +224,12 @@ footer p {
     border: none;
 }
 
+#planteoversigt h2 {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-weight: normal;
+    color: grey;
+}
+
 #sidebar {
     display: flex;
     flex-direction: column;
@@ -214,13 +239,13 @@ footer p {
     background-color: #d7ccd0;
     border: none;
     font-family: 'News Cycle', sans-serif;
-    font-weight: bold;
-    color: black;
-    font-size: 1.5rem;
+    color: grey;
+    font-size: 1.3rem;
     margin: 0px;
     cursor: pointer;
     width: 300px;
     margin: 1vw auto;
+    padding: 5px;
 }
 
 #sidebar button:active {
@@ -228,7 +253,7 @@ footer p {
 }
 
 .valgt {
-    background-color: blue;
+    color: red;
 }
 
 #planternav button {
@@ -251,7 +276,7 @@ footer p {
 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
     #liste {
         width: 75vw;
     }
@@ -300,28 +325,41 @@ footer p {
 
 /*Detaljeside*/
 
-#headerdetalje {
+#detalje {
+    padding: 80px 0 0 0;
+}
+
+#plantearticle {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
+    margin: 50px;
 }
 
-@media(min-width: 600) {
-    .detalje {
-        text-align: right;
-        margin-top: 5vw;
-        margin-right: 5vw;
-        visibility: visible;
-
-    }
+#txt {
+    flex-basis: 300px;
+    flex-grow: 1;
 }
 
-#detaljenav button {
-    margin: 1vw;
+#pic {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.luk {
+    font-size: 2rem;
     background: none;
     border: none;
-    color: white;
-    font-size: 2vw;
-    font-family: 'News Cycle', sans-serif;
+}
 
+@media (min-width: 700px) {
+
+    #pic {
+        padding: 60px;
+    }
+
+    #plantearticle {
+        width: 75vw;
+        margin: auto;
+    }
 }
