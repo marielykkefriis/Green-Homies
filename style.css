@@ -76,12 +76,32 @@ footer p {
 
 }
 
+
+
 #menuknap {
     margin: 5vw;
     font-size: 30px;
     z-index: 1;
     color: white;
     cursor: pointer;
+
+}
+
+#forsidenav button {
+    display: flex;
+    margin: 1vw;
+    margin-left: 24vw;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 5.4vw;
+    font-family: 'News Cycle', sans-serif;
+
+
+}
+
+#menu {
+    margin-top: 20vw;
 
 }
 
@@ -105,22 +125,19 @@ footer p {
     }
 
     #menu {
-
         visibility: visible;
+        margin-top: 30vw;
     }
 
-    .forside {
-        text-align: right;
-        margin-top: 25vw;
-        margin-right: 5vw;
-    }
 
     #menuknap {
         display: none;
     }
 
     #forsidenav button {
+        display: inline-block;
         margin: 1vw;
+        margin-left: 0;
         background: none;
         border: none;
         color: white;
