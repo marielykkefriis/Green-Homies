@@ -9,9 +9,9 @@ const liste = document.querySelector("#liste");
 function sidenVises() {
     console.log("sidenVises");
 
-    if (document.querySelector("#menuknap")) {
-        document.querySelector("#menuknap").addEventListener("click", toggleMenu);
-    }
+
+    document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
 
 
     if (document.querySelector("#plantermain")) {
