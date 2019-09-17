@@ -19,13 +19,30 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: white;
+            height: 100vh;
+            perspective: 1px;
+            transform-style: preserve-3d;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        html {
+            overflow: hidden;
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <section id="headerforside">
+    <header>
 
-        <nav id="forsidenav">
+        <nav>
             <a href="index.html">
                 <div id="logo"></div>
             </a>
@@ -36,7 +53,7 @@
             </div>
         </nav>
         <div id="menuknap">☰</div>
-    </section>
+    </header>
     <div class="parallax-wrapper">
         <div id="parallaxfill"></div>
         <div class="content">
