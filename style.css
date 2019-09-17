@@ -48,7 +48,7 @@ nav a {
 }
 
 nav a:hover {
-    color: white;
+    color: black;
 }
 
 a {
@@ -125,7 +125,7 @@ nav button {
     margin: 2vw 5vw;
     font-size: 30px;
     z-index: 1;
-    color: #8DA187;
+    color: black;
     cursor: pointer;
     position: absolute;
     top: 0;
@@ -139,7 +139,7 @@ nav button {
     top: 0;
     right: 0;
     width: 50vw;
-    padding: 0vw 0vw 5vw 5vw;
+    padding: 10vw 5vw;
 }
 
 /*forside.html*/
@@ -217,7 +217,8 @@ nav button {
 #planteoversigt h2 {
     font-family: 'Shadows Into Light Two';
     font-weight: normal;
-    color: grey;
+    color: black;
+    font-size: 1.8rem;
 }
 
 #sidebar {

@@ -30,7 +30,7 @@ function toggleMenu() {
         document.querySelector("#menuknap").textContent = "☰";
         document.querySelector("#burgermenu").classList = "";
     } else {
-        document.querySelector("#menuknap").textContent = "X";
+        document.querySelector("#menuknap").textContent = "✘";
         document.querySelector("#burgermenu").classList = "hidden";
     }
 }
