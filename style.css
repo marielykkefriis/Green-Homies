@@ -70,6 +70,12 @@ footer p {
     font-family: 'News Cycle', sans-serif;
 }
 
+footer img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
 .hidden {
     visibility: hidden;
 }
@@ -84,6 +90,10 @@ footer p {
     margin: 5vw 10vw 5vw 5vw;
 }
 
+.content .button {
+    margin: 0 0 40vw 5vw;
+}
+
 #headerforside {
     display: flex;
     flex-wrap: wrap;
@@ -92,18 +102,18 @@ footer p {
 
 #logo {
     background-image: url(img/logo.png);
-    width: 30vw;
-    height: 12vw;
+    width: 20vw;
+    height: 8vw;
     background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
-    margin: 5vw;
+    margin: 2vw 5vw;
 }
 
 
 #menuknap {
-    margin: 5vw;
+    margin: 2vw 5vw;
     font-size: 30px;
     z-index: 1;
     color: white;
@@ -114,14 +124,30 @@ footer p {
 
 }
 
+#forsidenav {
+    height: 10vh;
+    position: fixed;
+    background-color: #8DA187;
+    width: 100vw;
+    position: sticky;
+    z-index: 1;
+}
+
+#menu {
+    background-color: #8DA18790;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 5vw;
+}
+
 #forsidenav button {
     display: flex;
-    margin: 1vw;
-    margin-left: 24vw;
+    margin: 3vw 0 0 0;
     background: none;
     border: none;
     color: white;
-    font-size: 5.4vw;
+    font-size: 4.4vw;
 }
 
 #menu {
@@ -130,6 +156,10 @@ footer p {
 }
 
 /*parallax*/
+
+#parallaxfill {
+    height: 60vh;
+}
 
 .parallax-wrapper {
     width: 100vw;
@@ -155,70 +185,11 @@ footer p {
 
 .content {
     margin: 0 auto;
-    padding: 50px;
+    padding: 20px;
     width: 100%;
     background: white;
 }
 
-
-@media(min-width: 700px) {
-
-    #logo {
-        background-image: url(img/logo.png);
-        width: 15vw;
-        height: 6vw;
-        background-size: cover;
-        position: absolute;
-        margin: 1vw 0 0 2vw;
-        top: 0;
-        left: 0;
-
-    }
-
-    #menu {
-        visibility: visible;
-        margin-top: 30vw;
-        margin-bottom: 0;
-    }
-
-
-    #menuknap {
-        display: none;
-    }
-
-    #forsidenav button {
-        display: inline-block;
-        margin: 1vw;
-        margin-left: 0;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 2vw;
-        font-family: 'News Cycle', sans-serif;
-
-    }
-
-    .content h1 {
-        font-size: 3vw;
-        margin: 5vw 0 2vw 40vw;
-    }
-
-    .content p {
-        text-align: left;
-        margin: 0 10vw 2vw 40vw;
-        font-family: 'News Cycle', sans-serif;
-
-    }
-
-    .content .button {
-        margin: 0 0 0 40vw;
-    }
-
-    #forsidenav {
-        position: sticky;
-    }
-
-}
 
 /*Planter.html*/
 
@@ -248,7 +219,7 @@ footer p {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 1.5rem;
-    width: 80vw;
+    width: 60vw;
     margin: 1vw auto;
 }
 
@@ -314,52 +285,7 @@ footer p {
 
 }
 
-@media (min-width: 900px) {
-    #liste {
-        width: 75vw;
-    }
 
-    #plantermain {
-        padding: 140px 0 0 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "sidebar liste liste liste liste"
-    }
-
-    #planterlogo {
-        width: 10vw;
-        height: 4vw;
-    }
-
-    #sidebar button {
-        width: 230px;
-    }
-
-
-    #liste {
-        grid-area: liste;
-    }
-
-    #sidebar {
-        grid-area: sidebar;
-    }
-
-
-    #sidebar button {
-        margin: 10px;
-        text-align: left;
-    }
-
-    #sidebar button:hover {
-        transform: scale(1.02);
-        color: black;
-    }
-
-    #liste .plante:hover {
-        transform: scale(1.02);
-    }
-
-}
 
 /*Detaljeside*/
 
@@ -390,7 +316,78 @@ footer p {
     border: none;
 }
 
-@media (min-width: 700px) {
+
+
+/* media queries */
+
+@media(min-width: 700px) {
+
+    /*forside*/
+
+    #logo {
+        background-image: url(img/logo.png);
+        width: 7.5vw;
+        height: 3vw;
+        background-size: cover;
+        /*position: absolute;*/
+        margin: 1vw 0 0 2vw;
+        top: 0;
+        left: 0;
+
+    }
+
+    #forsidenav {
+        height: 10vh;
+        position: fixed;
+        background-color: #8DA187;
+        width: 100vw;
+        position: sticky;
+        z-index: 1;
+    }
+
+    #menu {
+        visibility: visible;
+        margin-bottom: 0;
+        background: none;
+        padding: 0;
+    }
+
+
+    #menuknap {
+        display: none;
+    }
+
+    #forsidenav button {
+        display: inline-block;
+        margin: 1vw;
+        margin-left: 0;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5vw;
+        font-family: 'News Cycle', sans-serif;
+
+    }
+
+    .content h1 {
+        font-size: 3vw;
+        margin: 5vw 0 2vw 40vw;
+    }
+
+    .content p {
+        text-align: left;
+        margin: 0 18vw 2vw 40vw;
+        font-family: 'News Cycle', sans-serif;
+
+    }
+
+    .content .button {
+        margin: 0 0 5vw 40vw;
+    }
+
+
+
+    /*detalje*/
 
     #pic {
         padding: 60px;
@@ -400,4 +397,58 @@ footer p {
         width: 75vw;
         margin: auto;
     }
+
+}
+
+@media (min-width: 900px) {
+
+    /*planteoversigten*/
+
+    #liste {
+        width: 75vw;
+    }
+
+    #plantermain {
+        padding: 140px 0 0 0;
+        margin: 0 8vw;
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "sidebar liste liste liste liste"
+    }
+
+    #planterlogo {
+        width: 10vw;
+        height: 4vw;
+    }
+
+    #sidebar button {
+        width: 190px;
+    }
+
+
+    #liste {
+        grid-area: liste;
+        width: 60vw;
+    }
+
+    #sidebar {
+        grid-area: sidebar;
+    }
+
+
+    #sidebar button {
+        margin: 10px;
+        text-align: left;
+    }
+
+    #sidebar button:hover {
+        transform: scale(1.02);
+        color: black;
+    }
+
+    #liste .plante:hover {
+        transform: scale(1.02);
+    }
+
 }
