@@ -38,6 +38,13 @@ h3 {
     font-weight: bold;
 }
 
+h4 {
+    font-family: 'Shadows Into Light Two', cursive;
+    color: #4D4C4C;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
 p {
     font-family: 'News Cycle', sans-serif;
     color: #4D4C4C;
@@ -195,9 +202,10 @@ footer img {
 
 #planterheader {
     text-align: right;
-    background-image: url(img/tr%C3%A6.jpg);
+    /*background-image: url(img/tr%C3%A6.jpg);
     background-size: cover;
-    background-position: 100%;
+    background-position: 100%;*/
+    background-color: #8DA187;
     margin: 0;
     height: auto;
     position: fixed;
@@ -241,7 +249,7 @@ footer img {
 }
 
 .button {
-    border: 2px solid #d7ccd0;
+    border: 2px solid #8DA187;
     font-family: 'News Cycle', sans-serif;
     color: grey;
     font-size: 1.3rem;
@@ -253,7 +261,7 @@ footer img {
 }
 
 .button:hover {
-    background-color: #d7ccd0;
+    background-color: #8DA187;
 }
 
 #sidebar button:hover {
@@ -261,7 +269,7 @@ footer img {
 }
 
 .valgt {
-    background-color: #d7ccd0;
+    background-color: #8DA187;
     color: black;
 }
 
@@ -452,3 +460,97 @@ footer img {
     }
 
 }
+
+<<<<<<< HEAD=======
+/*Detaljeside*/
+
+#detalje {
+    padding: 80px 0 0 0;
+}
+
+#plantearticle {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 50px;
+}
+
+#txt {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#pic {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.luk {
+    font-size: 2rem;
+    background: none;
+    border: none;
+}
+
+@media (min-width: 700px) {
+
+    #pic {
+        padding: 60px;
+    }
+
+    #plantearticle {
+        width: 75vw;
+        margin: auto;
+    }
+}
+
+/* Bag planterne */
+
+#om {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20vw;
+
+
+}
+
+.person {
+    border: 1px solid #d7ccd0;
+    width: 50vw;
+    margin: 2vw;
+    text-align: center;
+
+}
+
+.person img {
+    width: 40vw;
+    margin: 2vw;
+}
+
+.person p {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 1.2rem;
+
+}
+
+@media (min-width: 900px) {
+    #om {
+        margin-top: 10vw;
+    }
+
+    .person {
+        width: 25vw;
+        margin: 2vw;
+        text-align: center;
+
+    }
+
+    .person img {
+        width: 20vw;
+        margin: 2vw;
+    }
+}
+}
+
+> > > > > > > origin/master
