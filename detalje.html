@@ -10,17 +10,20 @@
 </head>
 
 <body>
-    <header id="planterheader">
-        <a href="index.html">
-            <div id="planterlogo"></div>
-        </a>
+    <section id="headerforside">
 
-        <nav id="planternav">
-            <button><a href="index.html">Forside</a></button>
-            <button><a href="planter.html">Planter</a></button>
-            <button><a href="om.html">Bag planterne</a></button>
+        <nav id="forsidenav">
+            <a href="index.html">
+                <div id="logo"></div>
+            </a>
+            <div id="menu" class="hidden">
+                <button><a href="index.html">Forside</a></button>
+                <button><a href="planter.html">Planter</a></button>
+                <button><a href="bag_planter.html">Bag planterne</a></button>
+            </div>
         </nav>
-    </header>
+        <div id="menuknap">☰</div>
+    </section>
 
     <section id="detalje">
         <button class="luk">←</button>
@@ -56,9 +59,26 @@
 
         function start() {
             hentData();
+
+            document.querySelector("#menuknap").addEventListener("click", toggleMenu);
             document.querySelector(".luk").addEventListener("click", () => {
                 history.back();
             })
+        }
+
+        function toggleMenu() {
+            console.log("toggleMenu");
+            document.querySelector("#menu").classList.toggle("hidden");
+
+            let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+            if (erSkjult == true) {
+                document.querySelector("#menuknap").textContent = "☰";
+                document.querySelector("#burgermenu").classList = "";
+            } else {
+                document.querySelector("#menuknap").textContent = "X";
+                document.querySelector("#burgermenu").classList = "hidden";
+            }
         }
 
         async function hentData() {

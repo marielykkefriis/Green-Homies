@@ -14,7 +14,7 @@ function sidenVises() {
     }
 
 
-    if (document.querySelector("#planternav")) {
+    if (document.querySelector("#plantermain")) {
         start();
     }
 
