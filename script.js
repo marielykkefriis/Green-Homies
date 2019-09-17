@@ -14,7 +14,7 @@ function sidenVises() {
     }
 
 
-    if (document.querySelector("#plantermain")) {
+    if (document.querySelector("#planternav")) {
         start();
     }
 
@@ -42,6 +42,7 @@ function start() {
 }
 
 function filtrer() {
+    console.log("filtrer");
     document.querySelector(".valgt").classList.remove("valgt");
     this.classList.add("valgt");
     filter = this.dataset.kategori;
