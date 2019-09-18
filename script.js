@@ -9,18 +9,17 @@ const liste = document.querySelector("#liste");
 function sidenVises() {
     console.log("sidenVises");
 
-
+    //klik på menuknappen fører videre til funktionen toggleMenu();
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 
-
-
+    //hvis #plantermain er til stede (dvs. kun på siden med planteoversigten) kaldes funktionen start();
     if (document.querySelector("#plantermain")) {
         start();
     }
 
 }
 
-function toggleMenu() {
+function toggleMenu() { //denne funktionen får burgermenuen til at virke
     console.log("toggleMenu");
     document.querySelector("#menu").classList.toggle("hidden");
 

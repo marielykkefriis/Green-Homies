@@ -115,15 +115,15 @@ nav {
 
 nav button {
     display: block;
-    margin: 3vw 0 0 0;
+    margin: 7vw 0 0 0;
     background: none;
     border: none;
-    font-size: 6.4vw;
+    font-size: 4.4vw;
 }
 
 #menuknap {
     margin: 2vw 5vw;
-    font-size: 30px;
+    font-size: 40px;
     z-index: 1;
     color: black;
     cursor: pointer;
@@ -138,7 +138,7 @@ nav button {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50vw;
+    width: 30vw;
     padding: 10vw 5vw;
 }
 
@@ -154,9 +154,11 @@ nav button {
 
 .content .button {
     margin: 0 0 40vw 5vw;
+    font-size: 1rem;
 }
 
 /*parallax*/
+/*Parallax effekten er lavet med kode lånt fra denne youtube-video: https://www.youtube.com/watch?v=ln5BWnYMSQA&fbclid=IwAR3IPSWGO1aiFqlAAogjcxlr0ZxX_-YSVGQWGqwGL-cOoToyZawSovLrmJM*/
 
 #parallaxfill {
     height: 60vh;
@@ -378,18 +380,18 @@ nav button {
 
     .content h1 {
         font-size: 3vw;
-        margin: 5vw 0 2vw 40vw;
+        margin: 5vw 0 2vw 50vw;
     }
 
     .content p {
         text-align: left;
-        margin: 0 18vw 2vw 40vw;
+        margin: 0 18vw 2vw 50vw;
         font-family: 'News Cycle', sans-serif;
 
     }
 
     .content .button {
-        margin: 0 0 5vw 40vw;
+        margin: 0 0 5vw 50vw;
     }
 
 
