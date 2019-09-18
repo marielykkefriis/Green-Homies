@@ -445,14 +445,15 @@ nav button {
         margin: 0 8vw;
         display: grid;
         grid-gap: 0.5rem;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "sidebar liste liste liste liste"
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "sidebar liste liste liste"
     }
 
 
     #liste {
         grid-area: liste;
         width: 60vw;
+        margin: auto;
     }
 
     #sidebar {
@@ -461,13 +462,15 @@ nav button {
         grid-area: sidebar;
         width: 20vw;
         margin: 0;
-
+        flex-direction: column;
+        left: 70px;
     }
 
     #sidebar button {
         width: 190px;
         margin: 10px;
         text-align: left;
+        font-size: 1rem;
     }
 
     #sidebar button:hover {
