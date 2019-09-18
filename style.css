@@ -4,6 +4,15 @@ body {
     margin: 0;
     padding: 0;
     background: white;
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+html {
+    overflow: hidden;
 }
 
 img {
@@ -48,6 +57,7 @@ footer {
     background-color: #d7ccd0;
     text-align: center;
     padding: 1vw;
+    width: 100vw;
 }
 
 footer p {
@@ -61,41 +71,30 @@ footer p {
 
 /*forside.html*/
 
-#velkommen h1 {
+.content h1 {
     margin: 5vw;
 }
 
-#velkommen p {
-    margin: 5vw;
-}
-
-#splash {
-    background-image: url(img/IMG_1086%20copy.jpg);
-    background-size: cover;
-    width: 100vw;
-    height: 70vw;
-    background-position: 40%;
-
+.content p {
+    margin: 5vw 10vw 5vw 5vw;
 }
 
 #headerforside {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-
 }
 
 #logo {
-    margin: 3vw;
     background-image: url(img/logo.png);
-    width: 20vw;
-    height: 8vw;
+    width: 30vw;
+    height: 12vw;
     background-size: cover;
-    margin-left: 2vw;
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 5vw;
 }
-
 
 
 #menuknap {
@@ -104,6 +103,9 @@ footer p {
     z-index: 1;
     color: white;
     cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
 
 }
 
@@ -121,32 +123,60 @@ footer p {
 }
 
 #menu {
-    margin-top: 20vw;
+    margin-bottom: 30vw;
 
 }
 
-@media(min-width: 600px) {
-    #splash {
-        background-image: url(img/IMG_1086%20copy.jpg);
-        width: 100vw;
-        height: 40vw;
-        background-size: cover;
-        /*background-position: 80% 0%;*/
-    }
+/*parallax*/
+
+.parallax-wrapper {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20vh;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+
+.parallax-wrapper::before {
+    content: "";
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(img/IMG_1086%20copy.jpg);
+    background-size: cover;
+    background-position: 30%;
+    z-index: -1;
+    transform: translateZ(-1px) scale(2);
+}
+
+.content {
+    margin: 0 auto;
+    padding: 50px;
+    width: 100%;
+    background: white;
+}
+
+
+@media(min-width: 700px) {
 
     #logo {
         background-image: url(img/logo.png);
         width: 15vw;
         height: 6vw;
         background-size: cover;
-        position: sticky;
-        margin-left: 2vw;
+        position: absolute;
+        margin: 1vw 0 0 2vw;
+        top: 0;
+        left: 0;
 
     }
 
     #menu {
         visibility: visible;
         margin-top: 30vw;
+        margin-bottom: 0;
     }
 
 
@@ -166,18 +196,22 @@ footer p {
 
     }
 
-    #velkommen h1 {
+    .content h1 {
         font-size: 3vw;
-        margin-left: 50vw;
-        margin-right: 40vw;
+        margin-left: 40vw;
         margin-top: 5vw;
     }
 
-    #velkommen p {
+    .content p {
         text-align: left;
-        margin-left: 50.5vw;
+        margin-left: 40vw;
+        margin-right: 10vw;
         font-family: 'News Cycle', sans-serif;
 
+    }
+
+    #forsidenav {
+        position: sticky;
     }
 
 
