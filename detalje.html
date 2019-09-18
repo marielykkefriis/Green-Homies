@@ -5,21 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+    <title>Green homies: detaljer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header id="planterheader">
-        <a href="index.html">
-            <div id="planterlogo"></div>
-        </a>
+    <header class="fixedheader">
 
-        <nav id="planternav">
-            <button><a href="index.html">Forside</a></button>
-            <button><a href="planter.html">Planter</a></button>
-            <button><a href="om.html">Bag planterne</a></button>
+        <nav>
+            <a href="index.html">
+                <div id="logo"></div>
+            </a>
+            <div id="menu" class="hidden">
+                <button><a href="index.html">Forside</a></button>
+                <button><a href="planter.html">Planter</a></button>
+                <button><a href="bag_planter.html">Bag planterne</a></button>
+            </div>
         </nav>
+        <div id="menuknap">☰</div>
     </header>
 
     <section id="detalje">
@@ -39,6 +42,9 @@
     </section>
     <footer>
         <p>© Green Homies</p>
+        <img src="icons/facebook.png" alt="facebook">
+        <img src="icons/instagram.png" alt="instagram">
+        <p>brevkassen@greenhomies.dk</p>
     </footer>
 
     <script>
@@ -53,9 +59,26 @@
 
         function start() {
             hentData();
+
+            document.querySelector("#menuknap").addEventListener("click", toggleMenu);
             document.querySelector(".luk").addEventListener("click", () => {
                 history.back();
             })
+        }
+
+        function toggleMenu() {
+            console.log("toggleMenu");
+            document.querySelector("#menu").classList.toggle("hidden");
+
+            let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+            if (erSkjult == true) {
+                document.querySelector("#menuknap").textContent = "☰";
+                document.querySelector("#burgermenu").classList = "";
+            } else {
+                document.querySelector("#menuknap").textContent = "X";
+                document.querySelector("#burgermenu").classList = "hidden";
+            }
         }
 
         async function hentData() {

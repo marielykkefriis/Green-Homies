@@ -9,9 +9,9 @@ const liste = document.querySelector("#liste");
 function sidenVises() {
     console.log("sidenVises");
 
-    if (document.querySelector("#menuknap")) {
-        document.querySelector("#menuknap").addEventListener("click", toggleMenu);
-    }
+
+    document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
 
 
     if (document.querySelector("#plantermain")) {
@@ -30,7 +30,7 @@ function toggleMenu() {
         document.querySelector("#menuknap").textContent = "☰";
         document.querySelector("#burgermenu").classList = "";
     } else {
-        document.querySelector("#menuknap").textContent = "X";
+        document.querySelector("#menuknap").textContent = "✘";
         document.querySelector("#burgermenu").classList = "hidden";
     }
 }
@@ -42,6 +42,7 @@ function start() {
 }
 
 function filtrer() {
+    console.log("filtrer");
     document.querySelector(".valgt").classList.remove("valgt");
     this.classList.add("valgt");
     filter = this.dataset.kategori;
