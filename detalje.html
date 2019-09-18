@@ -30,13 +30,14 @@
         <article id="plantearticle">
             <div id="txt">
                 <h1></h1>
+                <div id="pic">
+                    <img id="img1">
+                    <img id="img2">
+                </div>
                 <h2></h2>
                 <p id="info"></p>
                 <h3></h3>
                 <p id="pasning"></p>
-            </div>
-            <div id="pic">
-                <img>
             </div>
         </article>
     </section>
@@ -101,7 +102,9 @@
 
                     document.querySelector("#pasning").textContent = plante.gsx$pasning.$t;
 
-                    document.querySelector("img").src = `imgs/big/${plante.gsx$billede.$t}.jpg`;
+                    document.querySelector("#img1").src = `imgs/big/${plante.gsx$billede.$t}.jpg`;
+
+                    document.querySelector("#img2").src = `imgs/small/${plante.gsx$billede.$t}.jpg`;
 
                 }
             })
