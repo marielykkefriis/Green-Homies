@@ -260,8 +260,9 @@ nav button {
 #plantearticle {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    margin: 50px;
+    flex-direction: column;
+    width: 80vw;
+    margin: auto;
     padding: 70px 0 0 0;
 }
 
@@ -271,8 +272,18 @@ nav button {
 }
 
 #pic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     flex-basis: 300px;
     flex-grow: 1;
+}
+
+#img1,
+#img2 {
+    width: 187.5px;
+    height: 250px;
+    margin: 0 1vw 2vw 0;
 }
 
 .luk {
@@ -384,11 +395,18 @@ nav button {
     /*detalje*/
 
     #pic {
-        padding: 60px;
+        padding: 0px;
+    }
+
+    #img1,
+    #img2 {
+        width: 300px;
+        height: 400px;
+        margin: 0 1vw 2vw 0;
     }
 
     #plantearticle {
-        width: 75vw;
+        width: 50vw;
         margin: auto;
     }
 
@@ -460,49 +478,3 @@ nav button {
     }
 
 }
-<<<<<<< HEAD
-
-/*Detaljeside*/
-
-#detalje {
-    padding: 80px 0 0 0;
-}
-
-#plantearticle {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 50px;
-}
-
-#txt {
-    flex-basis: 300px;
-    flex-grow: 1;
-}
-
-#pic {
-    flex-basis: 300px;
-    flex-grow: 1;
-}
-
-.luk {
-    font-size: 2rem;
-    background: none;
-    border: none;
-}
-
-@media (min-width: 700px) {
-
-    #pic {
-        padding: 60px;
-    }
-
-    #plantearticle {
-        width: 75vw;
-        margin: auto;
-    }
-}
-
-/* Paralllax scrolling splash*/
-=======
->>>>>>> origin/master
