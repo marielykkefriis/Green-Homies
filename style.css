@@ -224,18 +224,20 @@ nav button {
 #sidebar {
     position: sticky;
     top: 80px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
     width: 90vw;
     margin: auto;
-    text-align: center;
 }
 
 .button {
     border: 2px solid #8DA187;
     font-family: 'News Cycle', sans-serif;
     color: grey;
-    font-size: 1.1rem;
+    font-size: 0.7rem;
     cursor: pointer;
-    margin: 1vw auto;
+    margin: auto;
     padding: 10px;
 
 }
@@ -261,7 +263,7 @@ nav button {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 80vw;
+    width: 85vw;
     margin: auto;
     padding: 70px 0 0 0;
 }
@@ -281,8 +283,8 @@ nav button {
 
 #img1,
 #img2 {
-    width: 187.5px;
-    height: 250px;
+    width: 150px;
+    height: 200px;
     margin: 0 1vw 2vw 0;
 }
 
@@ -443,14 +445,15 @@ nav button {
         margin: 0 8vw;
         display: grid;
         grid-gap: 0.5rem;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "sidebar liste liste liste liste"
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "sidebar liste liste liste"
     }
 
 
     #liste {
         grid-area: liste;
         width: 60vw;
+        margin: auto;
     }
 
     #sidebar {
@@ -459,13 +462,15 @@ nav button {
         grid-area: sidebar;
         width: 20vw;
         margin: 0;
-
+        flex-direction: column;
+        left: 70px;
     }
 
     #sidebar button {
         width: 190px;
         margin: 10px;
         text-align: left;
+        font-size: 1rem;
     }
 
     #sidebar button:hover {
