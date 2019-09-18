@@ -81,9 +81,6 @@ footer img {
 /*header og navigation*/
 
 header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     border-bottom: 2px solid #8DA187;
     z-index: 2;
 }
@@ -95,8 +92,8 @@ header {
 
 #logo {
     background-image: url(img/logogron.png);
-    width: 20vw;
-    height: 8vw;
+    width: 120px;
+    height: 51.36px;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -113,12 +110,25 @@ nav {
 
 }
 
+#menu {
+    background-color: #8DA18799;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 50vh;
+    padding: 10vw 0vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 nav button {
-    display: block;
-    margin: 7vw 0 0 0;
+    margin: 7vw 3vw 0 0;
     background: none;
     border: none;
-    font-size: 4.4vw;
+    font-size: 5.4vw;
+    font-family: 'News Cycle', sans-serif;
 }
 
 #menuknap {
@@ -133,14 +143,6 @@ nav button {
 
 }
 
-#menu {
-    background-color: #8DA18799;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30vw;
-    padding: 10vw 5vw;
-}
 
 /*forside.html*/
 
@@ -354,8 +356,8 @@ nav button {
 
     #logo {
         background-image: url(img/logogron.png);
-        width: 14vw;
-        height: 6vw;
+        width: 150px;
+        height: 64.2px;
         background-size: cover;
         /*position: absolute;*/
         margin: 0vw 2vw;
@@ -369,7 +371,10 @@ nav button {
         margin-bottom: 0;
         background: none;
         padding: 0;
+        display: block;
         text-align: right;
+        height: 10vh;
+        width: 50vw;
     }
 
 
