@@ -238,11 +238,13 @@ nav button {
 .button {
     border: 2px solid #8DA187;
     font-family: 'News Cycle', sans-serif;
+    background-color: white;
     color: grey;
-    font-size: 1rem;
+    font-size: 2vw;
     cursor: pointer;
-    margin: auto;
+    margin: 0vw 0.2vw;
     padding: 10px;
+    width: 50vw;
 
 }
 
@@ -414,7 +416,6 @@ nav button {
     }
 
 
-
     /*detalje*/
 
     #pic {
@@ -437,6 +438,10 @@ nav button {
     #sidebar {
         width: 70vw;
 
+    }
+
+    .button {
+        font-size: 1.8vw;
     }
 
 }
