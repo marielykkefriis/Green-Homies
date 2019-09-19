@@ -105,13 +105,13 @@ nav {
     height: 10vh;
     background-color: white;
     width: 100vw;
-    position: sticky;
-    z-index: 1;
+    position: fixed;
+    z-index: 2;
 
 }
 
 #menu {
-    background-color: #8DA18799;
+    background-color: #8DA187;
     position: absolute;
     top: 0;
     right: 0;
@@ -134,7 +134,7 @@ nav button {
 #menuknap {
     margin: 2vw 5vw;
     font-size: 40px;
-    z-index: 1;
+    z-index: 3;
     color: black;
     cursor: pointer;
     position: absolute;
@@ -164,6 +164,7 @@ nav button {
 
 #parallaxfill {
     height: 60vh;
+    z-index: -1;
 }
 
 .parallax-wrapper {
@@ -172,6 +173,7 @@ nav button {
     padding-top: 20vh;
     box-sizing: border-box;
     transform-style: preserve-3d;
+    z-index: -1;
 }
 
 .parallax-wrapper::before {
