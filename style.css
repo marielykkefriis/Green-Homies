@@ -106,7 +106,7 @@ nav {
     background-color: white;
     width: 100vw;
     position: sticky;
-    z-index: 1;
+    z-index: 2;
 
 }
 
@@ -134,7 +134,7 @@ nav button {
 #menuknap {
     margin: 2vw 5vw;
     font-size: 40px;
-    z-index: 1;
+    z-index: 3;
     color: black;
     cursor: pointer;
     position: absolute;
