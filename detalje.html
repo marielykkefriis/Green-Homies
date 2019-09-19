@@ -51,6 +51,7 @@
     </footer>
 
     <script>
+        //konstanter defineres
         const urlParams = new URLSearchParams(window.location.search);
         const id = urlParams.get("id");
         console.log(id);
@@ -58,41 +59,42 @@
         let planter;
         let url = `https://spreadsheets.google.com/feeds/list/1LdzNZvZu6UgvTfVuaW74ztqf7M_hN8RFGloykM7d-Es/od6/public/values?alt=json`;
 
-        document.addEventListener("DOMContentLoaded", start);
+        document.addEventListener("DOMContentLoaded", start); //når DOM indholdet er loaded kaldes funktionen start
 
         function start() {
-            hentData();
+            hentData(); //funktionen hentData kaldes
 
-            document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+            document.querySelector("#menuknap").addEventListener("click", toggleMenu); //når der klikkes på menuknappen kaldes funktionen toggleMenu
             document.querySelector(".luk").addEventListener("click", () => {
                 history.back();
-            })
+            }) //når der klikkes på luk knappen i venstre hjørne kommer man tilbage til siden med planteoversigten
         }
 
-        function toggleMenu() {
+        function toggleMenu() { //denne funktionen får burgermenuen til at virke
             console.log("toggleMenu");
-            document.querySelector("#menu").classList.toggle("hidden");
+            document.querySelector("#menu").classList.toggle("hidden"); //menuen skjules hvis den er vist og vises hvis den er skujt ved klik
 
-            let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+            let erSkjult = document.querySelector("#menu").classList.contains("hidden"); //kontantes erSkjult defineres som værende når menuen er skjult med klassen hidden
 
-            if (erSkjult == true) {
+            if (erSkjult == true) { // hvis erSkjult er sandt skal menuknappen vise ikon med tre vandrette striber komme frem og alle klasser fjernes fra #burgermenu
                 document.querySelector("#menuknap").textContent = "☰";
                 document.querySelector("#burgermenu").classList = "";
-            } else {
-                document.querySelector("#menuknap").textContent = "X";
+            } else { // hvis erSkjult ikke er sandt skal menuknappen være et x og burgermenuen skjules med klassen hidden
+                document.querySelector("#menuknap").textContent = "✘";
                 document.querySelector("#burgermenu").classList = "hidden";
             }
         }
 
-        async function hentData() {
-            const response = await fetch(url);
-            planter = await response.json();
-            visData();
+
+        async function hentData() { //json data hentes fra googlesheet
+            const response = await fetch(url); //response defineres som at vente på at url (som er defineret i starten af javaScript filen som et google sheet) hentes
+            planter = await response.json(); //planter udfyldes når jason dateen er hentet, venter på at det er hentet
+            visData(); //derefter kaldes funktionen visData();
         }
 
-        function visData() {
-            planter.feed.entry.forEach(plante => {
-                if (plante.gsx$id.$t == id) {
+        function visData() { //dette funktion viser dataen, der bestemmes hvilket dataen der skal indsættes hvor i skabelonen
+            planter.feed.entry.forEach(plante => { //for hver plante gælder dette
+                if (plante.gsx$id.$t == id) { //hvis plantns id er det samme som den der er trykket på udfyldes den med det data fra den plante
 
                     document.querySelector("h1").textContent = plante.gsx$overskrift.$t;
 
@@ -112,4 +114,6 @@
             })
         }
     </script>
-</body></html>
+</body>
+
+</html>
