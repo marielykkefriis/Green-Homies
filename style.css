@@ -46,6 +46,12 @@ nav a {
     /*Fjerner streg under link*/
     color: black;
     cursor: pointer;
+    margin: 7vw 3vw 0 0;
+    background: none;
+    border: none;
+    font-size: 5.4vw;
+    font-family: 'News Cycle', sans-serif;
+
 }
 
 nav a:hover {
@@ -56,6 +62,7 @@ nav a:hover {
 a {
     color: black;
     text-decoration: none;
+    font-family: 'News Cycle', sans-serif;
 }
 
 footer {
@@ -133,14 +140,6 @@ nav {
     position: fixed;
 }
 
-nav button {
-    margin: 7vw 3vw 0 0;
-    background: none;
-    border: none;
-    font-size: 5.4vw;
-    font-family: 'News Cycle', sans-serif;
-}
-
 #menuknap {
     /*Knap til burgermenu*/
     margin: 2vw 5vw;
@@ -165,9 +164,15 @@ nav button {
     margin: 5vw 10vw 5vw 5vw;
 }
 
-.content .button {
+.content a {
     margin: 0 0 40vw 5vw;
     font-size: 1rem;
+    border: 2px solid #8DA187;
+    padding: 10px;
+}
+
+.content a:hover {
+    background-color: #8DA187;
 }
 
 /*parallax*/
@@ -414,6 +419,8 @@ nav button {
         text-align: right;
         height: 10vh;
         width: 50vw;
+        top: 30px;
+        /*position af linksene i nav i denne skærmstørrelse*/
     }
 
 
@@ -421,18 +428,14 @@ nav button {
         display: none;
     }
 
-    nav button {
+    nav a {
         display: inline;
-        margin: 2rem 1rem 0 0;
         background: none;
         border: none;
         font-size: 1.1rem;
         font-family: 'News Cycle', sans-serif;
-
-    }
-
-    nav a {
         color: #8DA187;
+
     }
 
     .content h1 {
@@ -447,7 +450,7 @@ nav button {
 
     }
 
-    .content .button {
+    .content a {
         margin: 0 0 5vw 50vw;
         width: auto;
     }
