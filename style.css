@@ -164,6 +164,7 @@ nav button {
 
 #parallaxfill {
     height: 60vh;
+    z-index: -1;
 }
 
 .parallax-wrapper {
@@ -172,6 +173,7 @@ nav button {
     padding-top: 20vh;
     box-sizing: border-box;
     transform-style: preserve-3d;
+    z-index: -1;
 }
 
 .parallax-wrapper::before {
