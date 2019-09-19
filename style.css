@@ -105,13 +105,13 @@ nav {
     height: 10vh;
     background-color: white;
     width: 100vw;
-    position: sticky;
+    position: fixed;
     z-index: 2;
 
 }
 
 #menu {
-    background-color: #8DA18799;
+    background-color: #8DA187;
     position: absolute;
     top: 0;
     right: 0;
