@@ -49,8 +49,9 @@ nav a {
     margin: 7vw 3vw 0 0;
     background: none;
     border: none;
-    font-size: 5.4vw;
+    font-size: 6.4vw;
     font-family: 'News Cycle', sans-serif;
+    font-weight: bold;
 
 }
 
@@ -129,8 +130,8 @@ nav {
     /*Menuen placerer sig ift sig selv*/
     top: 0;
     right: 0;
-    width: 100vw;
-    height: 70vh;
+    width: 50vw;
+    height: 50vh;
     padding: 15vw 5vw 0 0;
     display: flex;
     /*Menuen får flex så den kan flexe ovenpå hinanden*/
